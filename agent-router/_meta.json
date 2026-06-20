@@ -1,0 +1,7 @@
+{
+  "name": "agent-router",
+  "description": "外部 Agent 路由分发。当用户请求更适合由其他 AI Agent（Qwen/WorkBuddy/OpenCode/Z.ai）处理时，整合上下文到单一文件，执行安全交接。",
+  "version": "1.0.0",
+  "created": "2026-06-20",
+  "tags": ["routing", "handoff", "orchestration"]
+}
