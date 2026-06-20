@@ -1,0 +1,17 @@
+[
+  {
+    "id": 1,
+    "prompt": "Build a landing page for a local coffee shop",
+    "expected": "Create a distinctive, production-grade HTML/CSS/JS landing page with a bold aesthetic direction, custom typography, cohesive color theme, and atmospheric details."
+  },
+  {
+    "id": 2,
+    "prompt": "Create a React dashboard for sales analytics",
+    "expected": "Generate a polished, functional React analytics dashboard with intentional visual hierarchy, CSS variables, and refined motion."
+  },
+  {
+    "id": 3,
+    "prompt": "Make a website for my new product. It should feel premium and modern, but I don't have a logo or brand colors yet.",
+    "expected": "Design a premium site while inventing a cohesive visual identity (typography, palette, layout), and clearly note the missing branding assets for the user to finalize."
+  }
+]

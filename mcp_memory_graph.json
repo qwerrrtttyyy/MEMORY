@@ -1,0 +1,75 @@
+{
+  "entities": [
+    {
+      "name": "External Agent Routing Rule",
+      "entityType": "workflow",
+      "observations": [
+        "When needing Qwen / WorkBuddy / OpenCode / Z.ai, consolidate all context, current task state, test prompts, and the specific request into a single file.",
+        "Ask the user to route; do not specify which agent to call. The user will auto-route to the appropriate agent.",
+        "This workflow is critical for multi-agent tasks."
+      ]
+    },
+    {
+      "name": "Skills Optimization Task",
+      "entityType": "project",
+      "observations": [
+        "Scope: 18 skills under /data/user/skills/*/SKILL.md.",
+        "Git initialized in /data/user/skills on branch auto-optimize/20260620-0015.",
+        "Test prompts generated in /workspace/test-prompts/*.json (2-3 per skill).",
+        "Results TSV at /workspace/auto-optimize-results.tsv.",
+        "Paused before Phase 1 baseline evaluation (structure + effect dimensions).",
+        "Next step when resumed: confirm test prompts, run baseline evaluation, hill-climb optimize from lowest score."
+      ]
+    },
+    {
+      "name": "OrdPaw Main Task",
+      "entityType": "project",
+      "observations": [
+        "Current main development task as of 2026-06-20.",
+        "Add OrdPaw support for downloading AI conversations, AI-generated programs, files, Skills, MCP, Scripts, and OrdPaw source code.",
+        "Support batch and multi-select downloads.",
+        "Support configurable storage location and space limits.",
+        "Support distributed storage: Browser and Server.",
+        "Fix New UI/UX animation performance issues and refine visual design to be elegant and high-quality.",
+        "Status: awaiting OrdPaw repository URL to clone into /workspace/ordpaw."
+      ]
+    },
+    {
+      "name": "memory-booster Setup",
+      "entityType": "system",
+      "observations": [
+        "Enabled as long-term cross-session memory system on 2026-06-20.",
+        "Memory directory: /workspace/.workbuddy/memory.",
+        "ChromaDB directory: /workspace/memory-booster/chroma_db.",
+        "Must run scripts with PYENV_VERSION=3.13.13 because Python 3.14 is incompatible with tokenizers/PyO3.",
+        "Patched /data/user/skills/memory-booster/scripts/index_memory.py line 106: get_memory_files() -> get_memory_files(MEMORY_DIRS).",
+        "MEMORY.md and 2026-06-20.md diary created and indexed.",
+        "MCP memory graph (mcp_memory) is now configured as the cross-session memory backend on 2026-06-20.",
+        "Entities created: External Agent Routing Rule, Skills Optimization Task, OrdPaw Main Task, memory-booster Setup.",
+        "Relations created linking workflow and memory state to active projects."
+      ]
+    }
+  ],
+  "relations": [
+    {
+      "from": "External Agent Routing Rule",
+      "to": "OrdPaw Main Task",
+      "relationType": "applies to"
+    },
+    {
+      "from": "memory-booster Setup",
+      "to": "Skills Optimization Task",
+      "relationType": "remembers state of"
+    },
+    {
+      "from": "memory-booster Setup",
+      "to": "OrdPaw Main Task",
+      "relationType": "remembers state of"
+    },
+    {
+      "from": "Skills Optimization Task",
+      "to": "OrdPaw Main Task",
+      "relationType": "paused for"
+    }
+  ]
+}

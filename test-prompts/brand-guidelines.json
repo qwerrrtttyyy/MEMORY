@@ -1,0 +1,17 @@
+[
+  {
+    "id": 1,
+    "prompt": "Apply Anthropic brand colors and typography to this HTML landing page so it matches the official look-and-feel.",
+    "expected": "Restyles the HTML to use Anthropic palette (#141413, #faf9f5, #d97757, #6a9bcc, #788c5d), Poppins headings, and Lora body text while preserving layout and readability."
+  },
+  {
+    "id": 2,
+    "prompt": "Format this presentation outline to follow Anthropic's corporate brand guidelines.",
+    "expected": "Applies Anthropic color scheme and typography hierarchy to the document/presentation, using accent colors for non-text shapes and ensuring on-brand visual formatting."
+  },
+  {
+    "id": 3,
+    "prompt": "Design a polished one-page brand guideline showcase for a new internal tool that feels unmistakably Anthropic, but I haven't decided on the exact content structure yet.",
+    "expected": "Creates a cohesive artifact (HTML/doc/poster) using Anthropic brand colors, fonts, and spacing, with a restrained, professional composition even with ambiguous requirements."
+  }
+]

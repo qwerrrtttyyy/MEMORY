@@ -1,0 +1,17 @@
+[
+  {
+    "id": 1,
+    "prompt": "Find all usages of the function processPayment across the codebase so I can safely refactor it.",
+    "expected": "Runs a targeted ripgrep search (e.g., rg 'processPayment' --type js --type ts), scopes to source directories, and returns file names, line numbers, and relevant context."
+  },
+  {
+    "id": 2,
+    "prompt": "Search the repo for potential security issues like hardcoded passwords or eval calls.",
+    "expected": "Uses ripgrep patterns such as rg -i \"password\\s*=\\s*['\\\"]\" and rg \"\\beval\\(\" with language filters, excludes noise directories, and reports findings with context."
+  },
+  {
+    "id": 3,
+    "prompt": "I need to locate every async function in the src/services directory that lacks a try/catch block, so I can add error handling consistently.",
+    "expected": "Uses ast-grep structural search (e.g., sg --pattern 'async function $NAME($$$) { $$$ }' --lang js src/services/) and filters/refines results to identify unguarded async functions."
+  }
+]

@@ -1,0 +1,17 @@
+[
+  {
+    "id": 1,
+    "prompt": "我想创建一个 Skill，用来把用户提供的 JSON 数据转换成格式化的 Markdown 表格，可以指定要展示的列。",
+    "expected": "进入 Skill 创建流程：访谈需求、确定触发场景、编写 SKILL.md、创建示例脚本和测试用例"
+  },
+  {
+    "id": 2,
+    "prompt": "帮我评估一下这个 Skill 的触发准确率，并优化它的 description，让它在相关场景下更容易被调用。",
+    "expected": "生成 trigger eval 查询集，与用户确认后运行 description 优化循环，最后更新 SKILL.md 的 description 字段并报告分数"
+  },
+  {
+    "id": 3,
+    "prompt": "能不能把我们刚才讨论的数据分析流程提取成一个可复用的 Skill？它要支持 CSV 和 Excel 输入，自动清洗缺失值，并输出统计摘要。请走三对话分离架构来创建。",
+    "expected": "使用 Planner/Generator/Evaluator 三阶段分离架构，先输出规格文档，再生成 Skill 代码，最后独立评估质量"
+  }
+]

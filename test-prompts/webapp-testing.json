@@ -1,0 +1,17 @@
+[
+  {
+    "id": 1,
+    "prompt": "Write a Playwright test that verifies the login form on http://localhost:3000 works with valid credentials.",
+    "expected": "Create a Python Playwright script that navigates to the login page, fills credentials, submits, and asserts successful login state"
+  },
+  {
+    "id": 2,
+    "prompt": "Capture a full-page screenshot of the dashboard after logging in, and check that no console errors appear.",
+    "expected": "Write a Playwright script that logs in, waits for networkidle, captures a full-page screenshot, and collects browser console logs to verify no errors"
+  },
+  {
+    "id": 3,
+    "prompt": "The 'add to cart' button test passes locally but flakes in CI. Debug it using the local dev server at http://localhost:5173 and the API at http://localhost:3000.",
+    "expected": "Use with_server.py to manage both backend and frontend, inspect the rendered DOM, add appropriate waits, reproduce the flaky behavior, and identify the root cause"
+  }
+]

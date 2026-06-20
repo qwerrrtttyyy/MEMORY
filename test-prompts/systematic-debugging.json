@@ -1,0 +1,17 @@
+[
+  {
+    "id": 1,
+    "prompt": "My unit test `test_calculate_total` is failing with an AssertionError. Can you debug it before proposing any fixes?",
+    "expected": "Follow Phase 1: read error messages and stack trace, reproduce the failure, inspect recent changes, then trace data flow to root cause"
+  },
+  {
+    "id": 2,
+    "prompt": "The production API randomly returns 500 errors under load. Help me figure out what's going wrong.",
+    "expected": "Start systematic debugging: gather evidence across components, identify reproduction pattern, form a single hypothesis, and test minimally"
+  },
+  {
+    "id": 3,
+    "prompt": "After the last deploy, the CI build passes but the signed macOS artifacts can't be installed. I've already tried two fixes that didn't work and each one revealed a new issue in a different layer.",
+    "expected": "Apply the 3-strike rule: stop guessing, re-investigate architecture across CI/build/signing layers, question whether the current signing pipeline is sound before any new fix"
+  }
+]

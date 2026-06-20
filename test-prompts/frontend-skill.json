@@ -1,0 +1,17 @@
+[
+  {
+    "id": 1,
+    "prompt": "Design a landing page for a B2B SaaS product",
+    "expected": "Produce a restrained, image-led landing page with hero, support, detail, and final CTA sections; avoid generic card grids and weak hierarchy."
+  },
+  {
+    "id": 2,
+    "prompt": "Create a portfolio website for a photographer",
+    "expected": "Build a visually strong portfolio with full-bleed imagery, sparse copy, strong brand presence, and memorable motion."
+  },
+  {
+    "id": 3,
+    "prompt": "I need a homepage for my startup that looks like Linear but also needs to show 8 features, 3 testimonials, a pricing table, and a team section.",
+    "expected": "Apply Linear-style restraint while organizing dense content; challenge unnecessary clutter, prioritize hierarchy and whitespace, and deliver a premium composition."
+  }
+]

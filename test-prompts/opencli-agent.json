@@ -1,0 +1,17 @@
+[
+  {
+    "id": 1,
+    "prompt": "帮我在 Twitter 上发一条推文，内容是：'今天学会了使用 opencli 自动化发布推文，感觉很方便！'",
+    "expected": "解析平台为 twitter、动作为 post，构造并执行 opencli twitter post 命令，成功后返回推文链接或确认信息"
+  },
+  {
+    "id": 2,
+    "prompt": "获取 B 站当前热门视频前 10 个，并以 JSON 格式输出到终端",
+    "expected": "构造 opencli bilibili hot --limit 10 -f json 命令，解析结构化结果并呈现前 10 条热门视频信息"
+  },
+  {
+    "id": 3,
+    "prompt": "我想把小红书上这篇笔记（note id: 67a1b2c3d4e5f6g7）里的图片和视频都下载到 ./xhs/notes 目录，前提是我已经在 Chrome 里登录过小红书账号。另外，如果下载失败，请告诉我可能需要安装什么依赖。",
+    "expected": "识别平台 xiaohongshu、动作 download，执行带 --output 选项的下载命令；失败时检查错误类型并提示登录状态、yt-dlp 等依赖或网络问题"
+  }
+]

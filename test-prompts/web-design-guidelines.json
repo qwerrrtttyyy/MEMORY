@@ -1,0 +1,17 @@
+[
+  {
+    "id": 1,
+    "prompt": "Please review my UI in src/components/LoginForm.tsx for accessibility and design best practices.",
+    "expected": "Fetch the latest Web Interface Guidelines, read LoginForm.tsx, and output findings in file:line format covering accessibility and design rules"
+  },
+  {
+    "id": 2,
+    "prompt": "Audit the design of all files in components/*.tsx against web interface guidelines.",
+    "expected": "Glob the matching files, fetch guidelines, review each file, and report violations using the terse file:line format specified in the guidelines"
+  },
+  {
+    "id": 3,
+    "prompt": "Check whether our marketing landing page and checkout flow follow the same design system and accessibility guidelines. The landing page is pages/index.tsx and the checkout flow spans pages/checkout.tsx and components/PaymentForm.tsx.",
+    "expected": "Fetch guidelines, read all three files, compare consistency across the landing and checkout experiences, and report guideline violations with file:line references"
+  }
+]

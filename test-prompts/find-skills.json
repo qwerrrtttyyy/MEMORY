@@ -1,0 +1,17 @@
+[
+  {
+    "id": 1,
+    "prompt": "Find skills for web search",
+    "expected": "Search ClawHub and OpenClaw Directory for web-search-related skills and return a short list with descriptions and installation tips."
+  },
+  {
+    "id": 2,
+    "prompt": "Search for OpenClaw skills that can interact with GitHub",
+    "expected": "Return GitHub-related OpenClaw skills from available sources, noting whether they are official or community-contributed."
+  },
+  {
+    "id": 3,
+    "prompt": "I need something to help me schedule posts and manage content across different social platforms, but I'm not sure what category that would be.",
+    "expected": "Infer the need as social-media/content-scheduling, search across relevant categories, and present discovery results with next-step guidance."
+  }
+]

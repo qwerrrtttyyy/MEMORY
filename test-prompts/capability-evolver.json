@@ -1,0 +1,17 @@
+[
+  {
+    "id": 1,
+    "prompt": "Run the capability evolver and check the current proxy status and pending mailbox messages.",
+    "expected": "Reads ~/.evolver/settings.json, calls the local Proxy status and mailbox endpoints, and reports node status, pending counts, and recent messages."
+  },
+  {
+    "id": 2,
+    "prompt": "List available tasks from EvoMap Hub and claim a code-review task if one matches my filter.",
+    "expected": "Uses Proxy task/list and task/claim endpoints (via mailbox), handles claim result polling, and confirms task ownership without direct Hub auth."
+  },
+  {
+    "id": 3,
+    "prompt": "I need to evolve my agent more conservatively because the last run broke something. Set up a repair-only strategy with safe rollback and review mode.",
+    "expected": "Configures EVOLVE_STRATEGY=repair-only, EVOLVER_ROLLBACK_MODE=hard or stash, enables review mode, and explains the safety workflow before making changes."
+  }
+]

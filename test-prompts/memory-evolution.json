@@ -1,0 +1,17 @@
+[
+  {
+    "id": 1,
+    "prompt": "Reflect on what we just built in this session",
+    "expected": "Run manual reflection cycle: read hot memory and recent reflections, identify 2-4 patterns, write to reflections/log.md, and promote critical lessons only after confirmation."
+  },
+  {
+    "id": 2,
+    "prompt": "Remember that I always prefer TypeScript strict mode and explicit return types",
+    "expected": "Write the preference to hot/memory.md (or warn if duplicate), compact hot memory if it exceeds the line limit, and confirm the action."
+  },
+  {
+    "id": 3,
+    "prompt": "I think you keep making the same mistake with error handling in our API routes. Can you review your patterns and fix this permanently?",
+    "expected": "Trigger correction/reflection cycle: search memory tiers, record the correction, identify the recurring pattern, and promote a critical lesson to hot/memory.md after user confirmation."
+  }
+]

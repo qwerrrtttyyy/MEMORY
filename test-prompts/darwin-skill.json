@@ -1,0 +1,17 @@
+[
+  {
+    "id": 1,
+    "prompt": "帮我改改 file-search 这个 skill，我觉得它的描述不够具体。",
+    "expected": "启动达尔文优化循环：读取 file-search/SKILL.md，按8维度rubric基线评估，提出并执行一个维度的改进，用git commit/revert保留或回滚，最后展示改动摘要。"
+  },
+  {
+    "id": 2,
+    "prompt": "给 brand-guidelines 这个 skill 打个分，看看质量怎么样。",
+    "expected": "执行 Phase 0.5-1：设计测试prompt、按结构维度逐项评分、生成评分卡，说明强项和短板，不进入优化循环。"
+  },
+  {
+    "id": 3,
+    "prompt": "我想把目录里所有 skills 都优化一遍，但不想让它乱改，先评估再优化，每轮改完给我看结果。",
+    "expected": "执行完整 Phase 0-3：初始化git分支、设计测试prompt并用户确认、基线评估、按分数从低到高hill-climbing优化、每skill结束人类检查点、最终汇总报告。"
+  }
+]

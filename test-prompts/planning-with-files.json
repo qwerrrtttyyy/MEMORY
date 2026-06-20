@@ -1,0 +1,17 @@
+[
+  {
+    "id": 1,
+    "prompt": "Help me plan out building a new REST API for a task management app. It should have user authentication, CRUD endpoints for tasks and projects, and automated tests.",
+    "expected": "Create task_plan.md, findings.md, and progress.md in the project root with phased goals, then proceed to implement according to the plan"
+  },
+  {
+    "id": 2,
+    "prompt": "I need to research and compare three open-source vector databases for our RAG pipeline. Create a planning structure and keep track of the findings as we go.",
+    "expected": "Initialize planning files, define research phases and comparison criteria, and log discoveries to findings.md after each source review"
+  },
+  {
+    "id": 3,
+    "prompt": "We were halfway through refactoring the checkout service when the session compacted and I think the context was cleared. Can you recover where we left off and continue the refactor?",
+    "expected": "Check for existing task_plan.md / progress.md / findings.md, run session-catchup if needed, re-read the plan, and resume from the in-progress phase"
+  }
+]

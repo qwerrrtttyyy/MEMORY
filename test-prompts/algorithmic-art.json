@@ -1,0 +1,17 @@
+[
+  {
+    "id": 1,
+    "prompt": "Create a generative flow field artwork in p5.js with thousands of particles leaving organic trails. Make it interactive with seed controls and parameter sliders.",
+    "expected": "Produces an algorithmic philosophy markdown plus a self-contained HTML artifact based on templates/viewer.html, using seeded Perlin-noise flow fields, particle systems, and Anthropic-branded UI controls."
+  },
+  {
+    "id": 2,
+    "prompt": "Build a p5.js particle system that explores emergent behavior through forces, attraction, and repulsion. Include seed navigation and tunable parameters.",
+    "expected": "Outputs a generative-art philosophy and a single HTML file with a living particle simulation, seed prev/next/random/jump, and real-time parameter controls."
+  },
+  {
+    "id": 3,
+    "prompt": "I want an algorithmic artwork inspired by the feeling of a rainy city at night. It should feel moody, organic, and subtly reference urban lights without being literal.",
+    "expected": "Creates a 4-6 paragraph algorithmic philosophy (e.g., 'Nocturnal Diffusion') and expresses it as a seeded p5.js sketch with conceptual depth, not a literal city drawing."
+  }
+]

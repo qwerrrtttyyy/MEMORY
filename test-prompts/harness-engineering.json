@@ -1,0 +1,17 @@
+[
+  {
+    "id": 1,
+    "prompt": "Refactor the authentication module across the backend API",
+    "expected": "Follow harness phases: orient, reconnaissance, TODO list, safe execution with verification, incremental commits, and final summary."
+  },
+  {
+    "id": 2,
+    "prompt": "Add a new payment feature to our e-commerce application",
+    "expected": "Apply disciplined multi-step methodology with planning, blast-radius analysis, sprint contract, real verification, and incremental commit/push."
+  },
+  {
+    "id": 3,
+    "prompt": "Our monolith is getting hard to maintain and the team wants to migrate from REST to GraphQL. Help me plan and start executing this migration.",
+    "expected": "Treat as a large multi-session task: map architecture, create spec/TODO/feature list, decompose safely, and establish multi-session handoff artifacts before writing production code."
+  }
+]
