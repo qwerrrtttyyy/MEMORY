@@ -1,75 +1,16 @@
 {
   "entities": [
-    {
-      "name": "External Agent Routing Rule",
-      "entityType": "workflow",
-      "observations": [
-        "When needing Qwen / WorkBuddy / OpenCode / Z.ai, consolidate all context, current task state, test prompts, and the specific request into a single file.",
-        "Ask the user to route; do not specify which agent to call. The user will auto-route to the appropriate agent.",
-        "This workflow is critical for multi-agent tasks."
-      ]
-    },
-    {
-      "name": "Skills Optimization Task",
-      "entityType": "project",
-      "observations": [
-        "Scope: 18 skills under /data/user/skills/*/SKILL.md.",
-        "Git initialized in /data/user/skills on branch auto-optimize/20260620-0015.",
-        "Test prompts generated in /workspace/test-prompts/*.json (2-3 per skill).",
-        "Results TSV at /workspace/auto-optimize-results.tsv.",
-        "Paused before Phase 1 baseline evaluation (structure + effect dimensions).",
-        "Next step when resumed: confirm test prompts, run baseline evaluation, hill-climb optimize from lowest score."
-      ]
-    },
-    {
-      "name": "OrdPaw Main Task",
-      "entityType": "project",
-      "observations": [
-        "Current main development task as of 2026-06-20.",
-        "Add OrdPaw support for downloading AI conversations, AI-generated programs, files, Skills, MCP, Scripts, and OrdPaw source code.",
-        "Support batch and multi-select downloads.",
-        "Support configurable storage location and space limits.",
-        "Support distributed storage: Browser and Server.",
-        "Fix New UI/UX animation performance issues and refine visual design to be elegant and high-quality.",
-        "Status: awaiting OrdPaw repository URL to clone into /workspace/ordpaw."
-      ]
-    },
-    {
-      "name": "memory-booster Setup",
-      "entityType": "system",
-      "observations": [
-        "Enabled as long-term cross-session memory system on 2026-06-20.",
-        "Memory directory: /workspace/.workbuddy/memory.",
-        "ChromaDB directory: /workspace/memory-booster/chroma_db.",
-        "Must run scripts with PYENV_VERSION=3.13.13 because Python 3.14 is incompatible with tokenizers/PyO3.",
-        "Patched /data/user/skills/memory-booster/scripts/index_memory.py line 106: get_memory_files() -> get_memory_files(MEMORY_DIRS).",
-        "MEMORY.md and 2026-06-20.md diary created and indexed.",
-        "MCP memory graph (mcp_memory) is now configured as the cross-session memory backend on 2026-06-20.",
-        "Entities created: External Agent Routing Rule, Skills Optimization Task, OrdPaw Main Task, memory-booster Setup.",
-        "Relations created linking workflow and memory state to active projects."
-      ]
-    }
+    {"id": "skills-optimization-complete", "type": "task", "content": "Skills 全量优化完成: 18 skills, 平均72.7→78.7, 0回滚"},
+    {"id": "agent-router-created", "type": "skill", "content": "外部Agent路由技能: Qwen/WorkBuddy/OpenCode/Z.ai 交接"},
+    {"id": "caveman-installed", "type": "skill", "content": "caveman: 减少AI输出75% token, 7个子技能"},
+    {"id": "superpowers-installed", "type": "skill", "content": "superpowers: TDD/子Agent驱动/代码审查等14个子技能"},
+    {"id": "trigger-words-added", "type": "improvement", "content": "全部18 skill新增keywords/tags触发词字段，提升Trae自动匹配"},
+    {"id": "ordpaw-main-task", "type": "task", "content": "OrdPaw下载管理器: 批量下载/存储配置/分散存储/UI优化"}
   ],
   "relations": [
-    {
-      "from": "External Agent Routing Rule",
-      "to": "OrdPaw Main Task",
-      "relationType": "applies to"
-    },
-    {
-      "from": "memory-booster Setup",
-      "to": "Skills Optimization Task",
-      "relationType": "remembers state of"
-    },
-    {
-      "from": "memory-booster Setup",
-      "to": "OrdPaw Main Task",
-      "relationType": "remembers state of"
-    },
-    {
-      "from": "Skills Optimization Task",
-      "to": "OrdPaw Main Task",
-      "relationType": "paused for"
-    }
+    {"from": "skills-optimization-complete", "to": "trigger-words-added", "type": "includes"},
+    {"from": "agent-router-created", "to": "skills-optimization-complete", "type": "after"},
+    {"from": "caveman-installed", "to": "skills-optimization-complete", "type": "after"},
+    {"from": "superpowers-installed", "to": "skills-optimization-complete", "type": "after"}
   ]
 }
